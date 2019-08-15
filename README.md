@@ -76,3 +76,16 @@ api.connectLogin("check-login", {
 	}
 })
 ```
+
+```js
+const api = require('./main')
+
+api.connectLogin("comment", {
+	token: "9ZUickVsDP4IaNZzQGojGtEJTg8u2ViCY4UpqsdbAA3QwBu9MmEJAe7bbHwHp2nB",
+	username: "username",
+	message: "Hi there",
+	recaptcha: "x"
+}, function(r) {
+	console.log(r)
+})
+```
