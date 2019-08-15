@@ -33,10 +33,8 @@ api.connectLogin("Page here", {
 ```
 
 # Pages, Inputs and Outputs
-Table is incomplete!
-
-|Page|Input|Output|
-|----|-----|------|
+|Page|Input|Output (incomplete)|
+|----|-----|-------------------|
 |check-login|token|state, logged, time|
 |user-search|query||
 |leaderboards|token||
