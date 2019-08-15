@@ -8,23 +8,24 @@ const BASE_URL = "http://api.agariohub.io/"
 
 module.exports = {
 	createData: function(json) {
-        return encodeURIComponent(btoa(JSON.stringify(json)).split("/").join("%"));
+        return encodeURIComponent(btoa(JSON.stringify(json)).split("/").join("%"))
     },
 	randomInt: function(min, max) {
         if (min == max) {
-			return min;
+			return min
 		}
-        return min + Math.floor(Math.random() * (max - min + 1));
+        return min + Math.floor(Math.random() * (max - min + 1))
     },
 	generateUdi: function(size) {
         var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-          , answer = "";
-        for (var i = 0; i < size; i++)
-            answer += chars[this.randomInt(0, chars.length - 1)];
-        return answer;
+        var answer = ""
+        for (var i = 0; i < size; i++) {
+			answer += chars[this.randomInt(0, chars.length - 1)]
+		}
+        return answer
     },
 	theCode: function() {
-        return this.randomInt(1e4, 4e7);
+        return this.randomInt(1e4, 4e7)
     },
 	connectLogin: function (page, jsonSend, callback, debug) {
 		var dataSend = this.createData(jsonSend)
@@ -38,6 +39,6 @@ module.exports = {
 				console.log(`[DEBUGGER] ${data}`)
 			}
 			callback(responseParse)
-		});
+		})
 	}
-};
+}
