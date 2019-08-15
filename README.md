@@ -15,7 +15,7 @@ const api = require('./api')
 # Usage
 
 ```js
-connectLogin("Page here", {
+api.connectLogin("Page here", {
 	// Data here
 }, function(r) {
 	// Callback
@@ -25,7 +25,7 @@ connectLogin("Page here", {
 ### Enable debugger
 
 ```js
-connectLogin("Page here", {
+api.connectLogin("Page here", {
 	// Data here
 }, function(r) {
 	// Callback
