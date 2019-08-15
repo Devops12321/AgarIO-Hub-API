@@ -35,8 +35,6 @@ api.connectLogin("Page here", {
 # Pages, Inputs and Outputs
 Table is incomplete!
 
-When I get some free time, I will try complete. You can help me by enabling debugger on `connectLogin` function and creating a new issue.
-
 |Page|Input|Output|
 |----|-----|------|
 |check-login|token|state, logged, time|
