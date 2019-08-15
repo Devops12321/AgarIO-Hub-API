@@ -78,14 +78,31 @@ api.connectLogin("check-login", {
 ```
 
 ```js
-const api = require('./main')
+const api = require('./api')
 
-api.connectLogin("comment", {
-	token: "9ZUickVsDP4IaNZzQGojGtEJTg8u2ViCY4UpqsdbAA3QwBu9MmEJAe7bbHwHp2nB",
-	username: "username",
-	message: "Hi there",
-	recaptcha: "x"
+const token = "9ZUickVsDP4IaNZzQGojGtEJTg8u2ViCY4UpqsdbAA3QwBu9MmEJAe7bbHwHp2nB"
+
+api.connectLogin("check-login", {
+	token: token
 }, function(r) {
-	console.log(r)
+	console.log("Login success")
+	if (r.state == "success" && r.logged == true) {
+		api.connectLogin("daily-reward", {
+			token: token
+		}, function(r) {
+			if (r.state == "success") {
+				console.log("Daily reward success")
+			}
+			api.connectLogin("open-box", {
+				token: token
+			}, function(r) {
+				if (r.state == "success") {
+					console.log("Mystery box success")
+				}
+			})
+		})
+	} else {
+		console.log("Login failed")
+	}
 })
 ```
