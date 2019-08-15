@@ -58,7 +58,7 @@ api.connectLogin("Page here", {
 |cancel-mall|token, id|state, time|
 |follow|token, username|state, time|
 |remove-comment|token, id|state, time|
-|comment|token, username, message, recaptcha|state, time|
+|comment|token, username, message, recaptcha (required but agariohub does not validate captcha token)|state, time|
 |user-profile|token, username||
 
 # Example
