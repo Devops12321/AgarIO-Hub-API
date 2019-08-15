@@ -1,3 +1,6 @@
+// AgarIO-Hub-API - api.js
+// By JJimenez_15 (https://github.com/JJimenez15)
+
 const btoa = require('btoa')
 const request = require('request')
 
