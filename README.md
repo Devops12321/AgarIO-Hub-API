@@ -78,6 +78,7 @@ api.connectLogin("check-login", {
 ```
 
 ```js
+// Login, collect daily reward and opens mystery box if exists
 const api = require('./api')
 
 const token = "9ZUickVsDP4IaNZzQGojGtEJTg8u2ViCY4UpqsdbAA3QwBu9MmEJAe7bbHwHp2nB"
