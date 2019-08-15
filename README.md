@@ -15,11 +15,27 @@ const api = require('./api')
 # Usage
 
 ```js
+// ConnectLogin
 api.connectLogin("Page here", {
-	// Data here
+	// Input here
 }, function(r) {
 	// Callback
 })
+```
+
+```js
+// Create Data
+createData("Input here")
+```
+
+```js
+// Generate Udi
+generateUdi(64)
+```
+
+```js
+// The Code
+theCode()
 ```
 
 ### Enable debugger
@@ -78,22 +94,24 @@ api.connectLogin("check-login", {
 ```
 
 ```js
-// verify if token is still working, collect daily reward and opens mystery box if exists
 const api = require('./api')
 
 const token = "9ZUickVsDP4IaNZzQGojGtEJTg8u2ViCY4UpqsdbAA3QwBu9MmEJAe7bbHwHp2nB"
 
+// Verify if token is still working
 api.connectLogin("check-login", {
 	token: token
 }, function(r) {
 	console.log("Login success")
 	if (r.state == "success" && r.logged == true) {
+		// Collect daily reward
 		api.connectLogin("daily-reward", {
 			token: token
 		}, function(r) {
 			if (r.state == "success") {
 				console.log("Daily reward success")
 			}
+			// Open mystery box if exists
 			api.connectLogin("open-box", {
 				token: token
 			}, function(r) {
