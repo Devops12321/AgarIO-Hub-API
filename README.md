@@ -6,6 +6,8 @@ You can get them by loggin in on AgarIO Hub.
 
 # Installation
 
+Node.js is required.
+
 ```bash
 # Install required modules
 npm install btoa
