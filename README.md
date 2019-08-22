@@ -1,6 +1,8 @@
 # AgarIO-Hub-API
 
-You can get a token by loggin in on AgarIO Hub using this [userscript](https://github.com/JJimenez15/AgarIO-Hub-API/edit/master/script.user.js) ([Tampermonkey](https://tampermonkey.net) is needed).
+AgarIO Hub API script and documentation for easy usage with accounts, bots, etc.
+
+A token is needed! you can get a token by loggin in on AgarIO Hub using this [userscript](https://github.com/JJimenez15/AgarIO-Hub-API/edit/master/script.user.js) ([Tampermonkey](https://tampermonkey.net) is needed).
 
 # Installation
 
