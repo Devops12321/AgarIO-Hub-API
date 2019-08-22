@@ -1,5 +1,8 @@
 # AgarIO-Hub-API
 
+NOTE: Valid token is required to work!
+You can get one token by loggin in on AgarIO Hub
+
 # Installation
 
 ```bash
