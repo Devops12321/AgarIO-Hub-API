@@ -1,7 +1,8 @@
 # AgarIO-Hub-API
 
-NOTE: Valid token is required to work!
-You can get one token by loggin in on AgarIO Hub
+NOTE: A valid token is needed to work!
+
+You can get them by loggin in on AgarIO Hub.
 
 # Installation
 
