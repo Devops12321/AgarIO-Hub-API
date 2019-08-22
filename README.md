@@ -1,18 +1,20 @@
 # AgarIO-Hub-API
 
-NOTE: A valid token is needed to work!
-
-You can get them by loggin in on AgarIO Hub.
+You can get a token by loggin in on AgarIO Hub using this [userscript](https://github.com/JJimenez15/AgarIO-Hub-API/edit/master/script.user.js) ([Tampermonkey](https://tampermonkey.net) is needed).
 
 # Installation
 
-Node.js is required.
+Install [Node.js](https://nodejs.org)
+Download this repository and extract it
+
+Open a terminal and write this commands inside `AgarIO-Hub-API-master`:
 
 ```bash
-# Install required modules
 npm install btoa
 npm install request
 ```
+
+Create a JavaScript file and add this line on the top to load the api.
 
 ```js
 const api = require('./api')
