@@ -64,6 +64,7 @@ api.connectLogin("Page here", {
 |check-login|token|state, logged, time|
 |user-search|query||
 |leaderboards|token||
+|simple-info|token||
 |info|token, theCode (optional), lastNotification (optional)||
 |event|||
 |mall|token||
