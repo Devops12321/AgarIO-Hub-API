@@ -1,5 +1,7 @@
 # AgarIO-Hub-API
 
+[![Discord](https://discordapp.com/api/guilds/602558493614014468/widget.png?style=banner2)](https://discord.gg/P8avcyY)
+
 **AGARIO HUB API IS STILL WORKING, EVEN IF THE GAME IS CLOSED!**
 
 AgarIO Hub API script and documentation for easy usage with accounts, bots, etc.
