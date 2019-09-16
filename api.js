@@ -7,6 +7,15 @@ const request = require('request')
 const BASE_URL = "http://api.agariohub.io/"
 
 module.exports = {
+	fakeCaptcha: function(length) {
+		var result           = '';
+		var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-';
+		var charactersLength = characters.length;
+		for ( var i = 0; i < length; i++ ) {
+			result += characters.charAt(Math.floor(Math.random() * charactersLength));
+		}
+		return result;
+	},
 	createData: function(json) {
         return encodeURIComponent(btoa(JSON.stringify(json)).split("/").join("%"))
     },
@@ -36,7 +45,7 @@ module.exports = {
 		request(`${BASE_URL}${page}/${dataSend}`, (err, req, data) => {
 			var responseParse = JSON.parse(data)
 			if (debug) {
-				console.log(`[DEBUGGER] ${data}`)
+				console.log(`[DEBUGGER] URL: ${BASE_URL}${page}/${dataSend}\n[DEBUGGER] DATA: ${data}`)
 			}
 			callback(responseParse)
 		})
