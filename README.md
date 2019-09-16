@@ -39,23 +39,23 @@ api.connectLogin("Page here", {
 
 ```js
 // Create Data
-createData("Input here")
+api.createData("Input here")
 ```
 
 ```js
 // Generate Udi
-generateUdi(64)
+api.generateUdi(64)
 ```
 
 ```js
 // Fake reCAPTCHA response
 // (Helps to prevent your account from getting banned by sending a not "real" response)
-fakeCaptcha(486)
+api.fakeCaptcha(486)
 ```
 
 ```js
 // The Code
-theCode()
+api.theCode()
 ```
 
 ### Enable debugger
